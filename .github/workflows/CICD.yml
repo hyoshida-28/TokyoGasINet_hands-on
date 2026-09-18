@@ -16,6 +16,7 @@ jobs:
           hugo-version: '0.101.0'
           extended: true
       - run: hugo --minify
+      - run: npx --yes pagefind --site public
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
