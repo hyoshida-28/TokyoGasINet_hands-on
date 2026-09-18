@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="pa3 pa4-ns">
+  <div id="search"></div>
+
+  <link href="{{ "pagefind/pagefind-ui.css" | relURL }}" rel="stylesheet">
+  <script src="{{ "pagefind/pagefind-ui.js" | relURL }}"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      new PagefindUI({ element: "#search", showSubResults: true });
+    });
+  </script>
+</section>
+{{ end }}
