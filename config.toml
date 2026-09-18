@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://hyoshida-28.github.io/TokyoGasINet_hands-on/'
 languageCode = 'ja'
 title = 'My New Hugo Site'
 theme = "ananke"
